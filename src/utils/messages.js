@@ -1,4 +1,4 @@
-const generateMessage = (username, text) => {
+const createMessage = (username, text) => {
     return {
         username,
         text,
@@ -6,7 +6,7 @@ const generateMessage = (username, text) => {
     }
 }
 
-const generateLocationMessage = (username, url) => {
+const createLocationMessage = (username, url) => {
     return {
         username,
         url,
@@ -15,6 +15,6 @@ const generateLocationMessage = (username, url) => {
 }
 
 module.exports = {
-    generateMessage,
-    generateLocationMessage
+    createMessage,
+    createLocationMessage
 }
