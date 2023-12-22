@@ -64,7 +64,6 @@ $messageForm.addEventListener('submit', (e) => {
         if (error) {
             return console.log(error)
         }
-        console.log('Message delivered!')
     })
 })
 
@@ -79,7 +78,6 @@ $sendLocationButton.addEventListener('click', () => {
             longitude: position.coords.longitude
         }, () => {
             $sendLocationButton.removeAttribute('disabled')
-            console.log('Location shared!')  
         })
     })
 })
